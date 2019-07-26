@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>o2r UI</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Welcome, o2r, to repo2docker!</h1>
+
+    <p><button id="execute">Execute</button></p>
+
+    <p><textarea id="response"></textarea></p>
+
+    <script>
+        $.ajaxSetup({
+            type: 'POST',
+            timeout: 30000,
+            error: function (xhr) {
+                $('#response').val('Error: ' + xhr.status + ' ' + xhr.statusText);
+            }
+        })
+
+        $(document).ready(function () {
+            $('#execute').click(function (event) {
+                $.post(
+                    '/o2r-api/v1/run', {}, function (data) {
+                        $("#response").val(JSON.stringify(data));
+                    }
+                );
+                event.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>

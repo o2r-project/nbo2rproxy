@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo 'Installing nbo2rproxy'
+
+${NB_PYTHON_PREFIX}/bin/python setup.py install && \
+jupyter serverextension enable --sys-prefix --py nbo2rproxy && \
+jupyter nbextension install    --sys-prefix --py nbo2rproxy && \
+jupyter nbextension enable     --sys-prefix --py nbo2rproxy

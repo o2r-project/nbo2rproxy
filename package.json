@@ -1,0 +1,36 @@
+{
+  "name": "nbo2rproxy",
+  "version": "0.1.0",
+  "description": "javascript dependencies for nbo2rproxy",
+  "main": "app.js",
+  "author": "Daniel Nüst, Min RK",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dockerode": "^2.5.8",
+    "express": "^4.17.1",
+    "randomstring": "^1.1.5",
+    "response-time": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "*.js",
+    "index.html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o2r-project/nbo2rproxy.git"
+  },
+  "keywords": [
+    "jupyter",
+    "o2r",
+    "ERC",
+    "executable research compendium"
+  ],
+  "bugs": {
+    "url": "https://github.com/o2r-project/nbo2rproxy/issues"
+  },
+  "homepage": "https://github.com/o2r-project/nbo2rproxy#readme"
+}

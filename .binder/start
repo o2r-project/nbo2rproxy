@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo '[start] Starting o2r-test'
+echo '[start] Who is the user in the container?'
+echo $(whoami)
+echo $UID
+echo '[start] Query the local Docker socket with curl, should see the container this app is running in'
+curl --unix-socket /var/run/docker.sock http:/v1.40/containers/json
+
+exec "$@"

@@ -1,0 +1,20 @@
+
+---
+author:
+  - name: "Ted Tester"
+    affiliation: University of Münster
+title: 'This is the title'
+doi: 'https://doi.org/10.5555/12345678'
+---
+
+Text A.
+
+```{r code_snippet}
+set.seed(42)
+
+library("fortunes")
+
+fortunes::fortune()
+```
+
+Text B.
