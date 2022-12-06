@@ -6,9 +6,9 @@
   "author": "Daniel Nüst, Min RK",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "dockerode": "^2.5.8",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "randomstring": "^1.1.5",
     "response-time": "^2.3.2"
   },
